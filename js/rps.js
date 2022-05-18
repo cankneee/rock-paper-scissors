@@ -15,12 +15,14 @@ function playerSelection() {
   if (input.toLowerCase() == "rock" || input.toLowerCase() == "paper" || input.toLowerCase() == "scissor" ){
   return input.toLowerCase();
   }
-  
 }
+  
 
   let win = 0;
   let lose = 0;
   let tie = 0;
+
+
 
 function round(playerSelection, computerPlay) {
   
@@ -69,12 +71,74 @@ function game() {
     console.log("YOU LOST");
   }
   if(win === lose) {
-    console.log("DRAW");
+    console.log("DRAW"); 
   }
   if(win > lose){
     console.log("YOU WON");
   }
  }
 
+ function rockPicked() {
+   if (computerPlay(rps) === "scissor") {
+     win++
+     document.getElementById("win").innerHTML = win;
+   }
 
-game()
+   if (computerPlay(rps) === "paper") {
+     lose++;
+     document.getElementById("lose").innerHTML = lose;
+   }
+
+   if(computerPlay(rps) === "rock"){
+     tie++
+     document.getElementById("tie").innerHTML = tie;
+   }
+   console.log("Wins: " + win, "Loss: " + lose, "Ties: "+ tie)
+ }
+
+ function paperPicked(){
+  if (computerPlay(rps) === "scissor") {
+    lose++
+    document.getElementById("lose").innerHTML = lose;
+  }
+
+  if (computerPlay(rps) === "paper") {
+    tie++;
+    document.getElementById("tie").innerHTML = tie;
+  }
+
+  if(computerPlay(rps) === "rock"){
+    win++;
+    document.getElementById("win").innerHTML = win;
+  }
+  console.log("Wins: " + win, "Loss: " + lose, "Ties: "+ tie)
+}
+
+function scissorPicked(){
+  if (computerPlay(rps) === "scissor") {
+    tie++
+    document.getElementById("tie").innerHTML = tie;
+  }
+
+  if (computerPlay(rps) === "paper") {
+    win++;
+    document.getElementById("win").innerHTML = win;
+  }
+
+  if(computerPlay(rps) === "rock"){
+    lose++
+    document.getElementById("lose").innerHTML = lose;
+  }
+  console.log("Wins: " + win, "Loss: " + lose, "Ties: "+ tie)
+}
+
+
+
+
+// document.getElementById("win").innerHTML = win;
+// document.getElementById("lose").innerHTML = lose;
+//document.getElementById("tie").innerHTML = tie;
+
+// document.getElementById("rock").addEventListener("click", rockPicked())
+// document.getElementById("paper").addEventListener("click", paperPicked())
+// document.getElementById("scissor").addEventListener("click", scissorPicked())

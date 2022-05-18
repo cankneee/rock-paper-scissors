@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock vs Paper vs Scissor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="header">
+       <div class="title">Rock vs Paper vs Scissor</div>
+   </div>
+
+
+   <div class="enemy">
+    <img class="slime" src="images/slime.png" alt="slime">
+    <p class="enemy_name_slime"> Slime </p>
+   </div>
+
+
+    <div class="scoreboard">Scoreboard</div>
+
+    <div class="player_score_header">Player Score : Tie : Enemy Score</div>
+
+    <div class="score_function">
+        <div id="win">0</div>
+        <div id="tie">0</div>
+        <div id="lose">0</div>
+        
+    
+    </div>
+   
+    <div class="hands">
+            <div class="rock">
+                    <button onclick="rockPicked()" class="button" id="rock"><img class="triple_image" src="images/rock.png" alt="rock"> </button>
+                    <div class="info">Rock</div>
+                    </div>
+            <div class="paper">
+                <button onclick="paperPicked()" class="button"> <img class="triple_image" src="images/open-hand.png" alt="paper"> </button>
+                    <div class="info">Paper</div>
+                    </div>
+            <div class="scissor">
+                <button onclick="scissorPicked()" class="button">  <img class="triple_image" src="images/scissor.png" alt="scissor"> </button>
+                    <div class="info">Scissor</div>
+                </div>
+     </div>
+
+    <div class="rules">First to 5 points wins. Rock beats scissor, paper beats rock, scissor beats paper. Good luck!</div>
+    
+    <div class="footer">Copyright <span>&#169;</span> The Odin Project 2022</div>
+
+</body>
+
+ <script src="js/rps.js"></script>
+</html>
