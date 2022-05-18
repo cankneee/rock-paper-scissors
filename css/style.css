@@ -1,0 +1,106 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+.title {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 48px;
+   font-weight: bold;
+   align-items: center;
+}
+
+.slime {
+        width: 300px;  
+        height: auto;  
+        border: 3px solid red;  
+        margin-bottom: -24px;
+        }  
+    
+.enemy_name_slime {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+        
+.scoreboard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.player_score_header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.score_function {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 132px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.hands{
+display:flex;
+justify-content: space-around;
+gap:16px;
+background-color: bisque;
+padding-top: 24px;
+}
+
+.triple_image{
+    max-width: 150px;  
+    max-height: auto;  
+    border: 3px solid red;  
+    
+}
+
+ .button {
+    display:flex;
+    justify-content: space-around;
+    color: transparent;
+    background-color: transparent;
+    border-color: green;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: end;
+}
+
+
+
+.rules {
+    display:flex;
+    justify-content: center;
+    padding-left: 450px;
+    padding-right: 450px;
+    font-size: 24px;
+    color: black;
+   
+}
+
+.footer {
+    align-items: center;
+    margin: 20px 50px;
+    font-size: 12px;
+    color: white;
+}
